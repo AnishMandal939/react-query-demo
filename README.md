@@ -37,3 +37,7 @@ cacheTime - shows how much time data is cached
 default is 5 minutes
 
 takes 3rd args in useQuery hook
+
+- cacheTime - time after which data will be removed from cache
+- staleTime - time after which data will be refetched
+- refetchOnWindowFocus - if true, data will be refetched when window is focused
