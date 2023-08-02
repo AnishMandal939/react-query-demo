@@ -26,3 +26,7 @@ rtk applied in RQSuperheros
 - we can also use useMutation hook to update data
 
 useQuery hook - is used in RQSuperheros component
+
+## react query devtools
+
+1- import devtools in app.js
