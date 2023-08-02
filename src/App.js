@@ -1,12 +1,15 @@
-import logo from './logo.svg';
+import { QueryClient, QueryClientProvider } from 'react-query';
 import './App.css';
 import { SuperHeros } from './components/SuperHeros.page';
 import { RQSuperHeros } from './components/RQSuperHeros.page';
 import { Home } from './components/Home.page';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
+// instance of query-client
+const queryClient = new QueryClient();
 function App() {
   return (
+    <QueryClientProvider client={queryClient}>
    <Router>
       <div className="App">
         <header className="App-header">
@@ -23,6 +26,7 @@ function App() {
         </Routes>
       </div>
    </Router>
+   </QueryClientProvider>
   );
 }
 
