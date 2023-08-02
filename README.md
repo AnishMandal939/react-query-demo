@@ -30,3 +30,10 @@ useQuery hook - is used in RQSuperheros component
 ## react query devtools
 
 1- import devtools in app.js
+
+isFetching - shows if data is fetching or not - it is true when data is fetching, react-query
+
+cacheTime - shows how much time data is cached
+default is 5 minutes
+
+takes 3rd args in useQuery hook

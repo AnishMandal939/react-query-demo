@@ -8,7 +8,7 @@ export const SuperHeros = () => {
 
     useEffect(() => {
         // https://akabab.github.io/superhero-api/api/all.json
-        axios.get('http://localhost:4000/superheros1')
+        axios.get('http://localhost:4000/superheros')
             .then((response) => {
                 setData(response.data);
                 setIsLoading(false);
